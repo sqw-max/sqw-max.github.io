@@ -16,23 +16,21 @@
   <meta name="author" content="wc">
   <meta name="keywords" content="">
   
-    <meta name="description" content="onchange 事件会在域的内容改变时触发。注意： 在元素的值改变了且失去焦点时触发。">
+    <meta name="description" content="有东西被加密了, 请输入密码查看.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript输入框和change事件">
-<meta property="og:url" content="https://wan_chen_g.gitee.io/2022/10/02/4e38f0aeb9f447e990233d8ef1f6490d/index.html">
+<meta property="og:title" content="Web API框架">
+<meta property="og:url" content="https://wan_chen_g.gitee.io/2022/10/17/347b00d202ef4683972352dc7b2c6ffd/index.html">
 <meta property="og:site_name" content="wxz">
-<meta property="og:description" content="onchange 事件会在域的内容改变时触发。注意： 在元素的值改变了且失去焦点时触发。">
+<meta property="og:description" content="有东西被加密了, 请输入密码查看.">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://wan_chen_g.gitee.io/MyImg/467.png">
-<meta property="article:published_time" content="2022-10-02T08:15:00.000Z">
-<meta property="article:modified_time" content="2022-10-04T07:49:46.583Z">
+<meta property="article:published_time" content="2022-10-16T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-11-04T17:01:05.273Z">
 <meta property="article:author" content="wc">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://wan_chen_g.gitee.io/MyImg/467.png">
   
   
   
-  <title>JavaScript输入框和change事件 - wxz</title>
+  <title>Web API框架 - wxz</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -220,7 +218,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="JavaScript输入框和change事件"></span>
+            <span id="subtitle" data-typed-text="Web API框架"></span>
           
         </div>
 
@@ -231,8 +229,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-10-02 16:15" pubdate>
-          2022年10月2日 下午
+        <time datetime="2022-10-17 00:00" pubdate>
+          2022年10月17日 凌晨
         </time>
       </span>
     
@@ -243,7 +241,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          910 字
+          554 字
         
       </span>
     
@@ -254,7 +252,7 @@
         
         
         
-          8 分钟
+          5 分钟
         
       </span>
     
@@ -300,21 +298,25 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">JavaScript输入框和change事件</h1>
+            <h1 style="display: none">Web API框架</h1>
             
             
-              <div class="markdown-body">
-                
-                <p>onchange 事件会在域的内容改变时触发。注意： 在元素的值改变了且失去焦点时触发。</p>
-<span id="more"></span>
+              
+              <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="2826701e411f1c03394c54b77e39630d7c418f15cbc44259c6319746d07eae03">61b8005fdbb9e5d8586f748e60a50d8980079d006c7f369dbb91008151e6a14b1b1b1bdda95c6e29c3163cab78f434d1869754b7fecf2d3d41bc07e92c53d3820ac57612c5941ec1ac065224a6e0db230d14cfeb359cbbb54d3645f9359faca446fe294a46597b78865a21a9de11857977272e6050210fb18057d6201ee7b1b402a026294042c88a24c10a549cb653d7a53f2e55b3532f3fd3de5013fddfce3135a4840bea0ba3f58ca7e7f60a407ebada277a6b43f808c2357750aaddbce0e2af2c71ac8bbe7b4a4d93355465c915a9c76afaceff13f8e5b96479012519b1051a206ae7176a90fed769a84e690937903d39f31a11f707774b232fda60a2df63b6f41f2a79cd7f7df8bc1d2051882c5e</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好, 这里需要密码.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+              
 
-<p>oninput 事件不需要等到元素失去焦点，是实时的。缺陷：从脚本中修改值不会触发事件。从浏览器下拉提示框里选取值时不会触发。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Title<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span><br>    姓名：<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;myName&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;name&quot;</span> <span class="hljs-attr">oninput</span>=<span class="hljs-string">&quot;wc()&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;wc&quot;</span> <span class="hljs-attr">disabled</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>确定<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript"></span><br><span class="language-javascript">    <span class="hljs-keyword">function</span> <span class="hljs-title function_">wc</span>(<span class="hljs-params"></span>) &#123;</span><br><span class="language-javascript">        <span class="hljs-keyword">if</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&quot;name&quot;</span>).<span class="hljs-property">value</span> == <span class="hljs-string">&quot;&quot;</span> || <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&quot;name&quot;</span>).<span class="hljs-property">value</span> == <span class="hljs-literal">null</span>)&#123;</span><br><span class="language-javascript">            <span class="hljs-comment">//当输入框无值时禁止点击确定按钮</span></span><br><span class="language-javascript">            <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&quot;wc&quot;</span>).<span class="hljs-property">disabled</span>=ture;</span><br><span class="language-javascript">        &#125;<span class="hljs-keyword">else</span> &#123;</span><br><span class="language-javascript">            <span class="hljs-comment">//当输入框有值时可以点击确定按钮</span></span><br><span class="language-javascript">            <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&quot;wc&quot;</span>).<span class="hljs-property">disabled</span>=<span class="hljs-literal">false</span>;</span><br><span class="language-javascript">        &#125;</span><br><span class="language-javascript">    &#125;</span><br><span class="language-javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure>
-
-<p><img src="/../MyImg/467.png" srcset="/img/loading.gif" lazyload></p>
-<center style="color:green">已完结</center>
-                
-              </div>
+              
             
             <hr/>
             <div>
@@ -330,7 +332,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/JavaScript/" class="category-chain-item">JavaScript</a>
+  <a href="/categories/ASP-NET/" class="category-chain-item">ASP.NET</a>
   
   
 
@@ -350,8 +352,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>JavaScript输入框和change事件</div>
-      <div>https://wan_chen_g.gitee.io/2022/10/02/4e38f0aeb9f447e990233d8ef1f6490d/</div>
+      <div>Web API框架</div>
+      <div>https://wan_chen_g.gitee.io/2022/10/17/347b00d202ef4683972352dc7b2c6ffd/</div>
     </div>
     <div class="license-meta">
       
@@ -363,7 +365,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年10月2日</div>
+          <div>2022年10月17日</div>
         </div>
       
       
@@ -395,9 +397,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/10/14/505def2ea6ca4736ae04f82a7d621d37/" title="Quartz&amp;&amp;Spring.Net应用">
+                      <a href="/2022/10/18/b79f0e14821f4c58a3d1aab09a193b49/" title="Web API请求参数&amp;&amp;接收">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Quartz&amp;&amp;Spring.Net应用</span>
+                        <span class="hidden-mobile">Web API请求参数&amp;&amp;接收</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -405,8 +407,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/10/02/ac5aedbdf6b04e10b20b07e9abb3a7a7/" title="Spring.Net入门">
-                        <span class="hidden-mobile">Spring.Net入门</span>
+                      <a href="/2022/10/16/078214e4820b4926a9c743dc4882418d/" title="Ajax请求ashx">
+                        <span class="hidden-mobile">Ajax请求ashx</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -587,6 +589,23 @@
   
 
 
+
+
+  
+  <script defer>
+    if (document.getElementById('hbePass')) {
+      Fluid.utils.waitElementLoaded('hbe-prefix', function() {
+        var hbePrefix = document.querySelector('hbe-prefix');
+        hbePrefix.parentElement.classList.add('markdown-body');
+        Fluid.utils.retry(function() {
+          if (Fluid.boot && Fluid.boot.refresh) {
+            Fluid.boot.refresh();
+            return true;
+          }
+        }, 100, 10);
+      })
+    }
+  </script>
 
 
   
