@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/sqw-max/sqw-max.github.io/img/fluid.png">
-  <link rel="icon" href="/sqw-max/sqw-max.github.io/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -19,7 +19,7 @@
     <meta name="description" content="有东西被加密了, 请输入密码查看.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Web API依赖注入">
-<meta property="og:url" content="https://github.com/sqw-max/sqw-max.github.io/2022/10/24/ef4c8c1cac7b4defb6bf6558b3c29c43/index.html">
+<meta property="og:url" content="https://sqw-max.github.io/2022/10/24/ef4c8c1cac7b4defb6bf6558b3c29c43/index.html">
 <meta property="og:site_name" content="雯之256">
 <meta property="og:description" content="有东西被加密了, 请输入密码查看.">
 <meta property="og:locale" content="zh_CN">
@@ -54,12 +54,12 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
 
 
-<link  rel="stylesheet" href="/sqw-max/sqw-max.github.io/css/main.css" />
+<link  rel="stylesheet" href="/css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/sqw-max/sqw-max.github.io/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/sqw-max/sqw-max.github.io/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
   
 
 
@@ -68,15 +68,15 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"github.com","root":"/sqw-max/sqw-max.github.io/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"DzAitph7OHy4D4lsF1zGbi0n-gzGzoHsz","app_key":"32FjQVIAy5mLhmuKKERaGjF7","server_url":"https://1epgvtla.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":false}},"search_path":"/sqw-max/sqw-max.github.io/local-search.xml"};
+    var CONFIG = {"hostname":"sqw-max.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"DzAitph7OHy4D4lsF1zGbi0n-gzGzoHsz","app_key":"32FjQVIAy5mLhmuKKERaGjF7","server_url":"https://1epgvtla.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/sqw-max/sqw-max.github.io/js/utils.js" ></script>
-  <script  src="/sqw-max/sqw-max.github.io/js/color-schema.js" ></script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
   
 
   
@@ -110,7 +110,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/sqw-max/sqw-max.github.io/">
+    <a class="navbar-brand" href="/">
       <strong>雯之</strong>
     </a>
 
@@ -135,7 +135,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/sqw-max/sqw-max.github.io/">
+              <a class="nav-link" href="/">
                 <i class="iconfont icon-home-fill"></i>
                 首页
               </a>
@@ -147,7 +147,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/sqw-max/sqw-max.github.io/archives/">
+              <a class="nav-link" href="/archives/">
                 <i class="iconfont icon-archive-fill"></i>
                 归档
               </a>
@@ -159,7 +159,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/sqw-max/sqw-max.github.io/categories/">
+              <a class="nav-link" href="/categories/">
                 <i class="iconfont icon-category-fill"></i>
                 分类
               </a>
@@ -171,7 +171,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/sqw-max/sqw-max.github.io/tags/">
+              <a class="nav-link" href="/tags/">
                 <i class="iconfont icon-tags-fill"></i>
                 标签
               </a>
@@ -183,7 +183,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/sqw-max/sqw-max.github.io/about/">
+              <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
                 关于
               </a>
@@ -212,7 +212,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/sqw-max/sqw-max.github.io/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -241,7 +241,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          778 字
+          650 字
         
       </span>
     
@@ -252,7 +252,7 @@
         
         
         
-          7 分钟
+          6 分钟
         
       </span>
     
@@ -303,7 +303,7 @@
             
               
               <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="03f5fadd1a310b7b798a4d028b5097a723a3dc96c08a2858c0bdcc98dcb9b635">1d609c51ebcf4ec0e11d0e607078e93c78734bddeb4b769ee1a4728a59cab5f06e90e1dceb6a2c20b63279d0d0355a57c4638f0ab6e80f5546774c0c2aed9c2c17605344919452ec25687ccae0f38cc44614bff1c0cd88d5b44a781f2faf3bab50ee4b7b91945b0a9bd72a2f3690ee7da0f0bd9bf0e8bdf9353ea38c22005cecdbe5f09e3aa12bc2e327f1d86344111c76768a6b0b30dd575bc007f91006abaafcad6ce630693b7a689468784835e90a227335c584daf4f8b5169ad6812447c379b82e7da36a375ff23f9d6db05ba98f27970fdffd5522cc34a853f9bd6a187606b3dd5bf11448765c7f220e238379d1318dc93949f3598c5fdde9acf71c06ad8d7498f48371e3d3f2013b85d2c73aa79381bea172477c9f5b01f7bf8ce81c2e2c8a62adf9addd77a2339b93b0169838944256c840242b333dd2f8b78913cd70b01fd855376a9c735a8734a24a3944993842494f9f3404f6ada02ae33d428dd22304f957375fa21f7624ca942de6379bd959c0138c300e0583e6e3bd92fcf423</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="8758a1252a94025754483674abbe420792cdad8f52158be12c10783c33eae352">1d609c51ebcf4ec0e11d0e607078e93c78734bddeb4b769ee1a4728a59cab5f06e90e1dceb6a2c20b63279d0d0355a57c4638f0ab6e80f5546774c0c2aed9c2c17605344919452ec25687ccae0f38cc41246bc0e0a7a1df4129e336a3806d2332a9d15bba6a38ce17a6cf779dcbd68d767bdf7eda6536036393967ec552f69f72c4d0966bde397f1c4c89dbed2250635d7b6566b682daf887643f977178ba5470e2ec2c7d0672ce4af7a5363e1b1d8fd2415c7106ae85e7872d913875b69d410f06209a0b0399261d92ec1570f0d3bbdf7bdeab22b6f75bff5bfabfd9ab95dea05d4f5e0c2762ed27a5db80df2afdcec67b8e2596249ca0f1536259fe69c26a8dbabd1e277a150f0c71d11dd99c16363c28778612d6176e71c9c3b9b3c5362819ab5056418ad7598ca7836a21577956d31a5a4b57b74e799b6a31ba13fe6ba0d</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
       <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
@@ -313,7 +313,7 @@
     </div>
   </div>
 </div>
-<script data-pjax src="/sqw-max/sqw-max.github.io/lib/hbe.js"></script><link href="/sqw-max/sqw-max.github.io/css/hbe.style.css" rel="stylesheet" type="text/css">
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
               
 
               
@@ -332,7 +332,7 @@
     
       <span class="category-chain">
         
-  <a href="/sqw-max/sqw-max.github.io/categories/ASP-NET/" class="category-chain-item">ASP.NET</a>
+  <a href="/categories/ASP-NET/" class="category-chain-item">ASP.NET</a>
   
   
 
@@ -353,7 +353,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>Web API依赖注入</div>
-      <div>https://github.com/sqw-max/sqw-max.github.io/2022/10/24/ef4c8c1cac7b4defb6bf6558b3c29c43/</div>
+      <div>https://sqw-max.github.io/2022/10/24/ef4c8c1cac7b4defb6bf6558b3c29c43/</div>
     </div>
     <div class="license-meta">
       
@@ -397,7 +397,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/sqw-max/sqw-max.github.io/2022/10/25/1fd12b9d8aee4ec98bbf07e6bbd9c9b2/" title="在Web API项目中配置Swagger">
+                      <a href="/2022/10/25/1fd12b9d8aee4ec98bbf07e6bbd9c9b2/" title="在Web API项目中配置Swagger">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">在Web API项目中配置Swagger</span>
                         <span class="visible-mobile">上一篇</span>
@@ -407,7 +407,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/sqw-max/sqw-max.github.io/2022/10/23/2ae664e0e61646e98e561f97cc252096/" title="ASP.NET Webform项目添加Web API">
+                      <a href="/2022/10/23/2ae664e0e61646e98e561f97cc252096/" title="ASP.NET Webform项目添加Web API">
                         <span class="hidden-mobile">ASP.NET Webform项目添加Web API</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -590,8 +590,8 @@
 
 <script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/sqw-max/sqw-max.github.io/js/events.js" ></script>
-<script  src="/sqw-max/sqw-max.github.io/js/plugins.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
 
 
   <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
@@ -613,7 +613,7 @@
 
 
   
-    <script  src="/sqw-max/sqw-max.github.io/js/img-lazyload.js" ></script>
+    <script  src="/js/img-lazyload.js" ></script>
   
 
 
@@ -729,9 +729,9 @@
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script defer src="/sqw-max/sqw-max.github.io/js/leancloud.js" ></script>
+  <script defer src="/js/leancloud.js" ></script>
 
-  <script  src="/sqw-max/sqw-max.github.io/js/local-search.js" ></script>
+  <script  src="/js/local-search.js" ></script>
 
 
 
@@ -739,7 +739,7 @@
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/sqw-max/sqw-max.github.io/js/boot.js" ></script>
+<script  src="/js/boot.js" ></script>
 
 
   

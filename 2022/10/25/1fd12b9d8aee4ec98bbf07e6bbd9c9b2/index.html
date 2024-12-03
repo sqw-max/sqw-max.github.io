@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/sqw-max/sqw-max.github.io/img/fluid.png">
-  <link rel="icon" href="/sqw-max/sqw-max.github.io/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -19,7 +19,7 @@
     <meta name="description" content="有东西被加密了, 请输入密码查看.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在Web API项目中配置Swagger">
-<meta property="og:url" content="https://github.com/sqw-max/sqw-max.github.io/2022/10/25/1fd12b9d8aee4ec98bbf07e6bbd9c9b2/index.html">
+<meta property="og:url" content="https://sqw-max.github.io/2022/10/25/1fd12b9d8aee4ec98bbf07e6bbd9c9b2/index.html">
 <meta property="og:site_name" content="雯之256">
 <meta property="og:description" content="有东西被加密了, 请输入密码查看.">
 <meta property="og:locale" content="zh_CN">
@@ -54,12 +54,12 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
 
 
-<link  rel="stylesheet" href="/sqw-max/sqw-max.github.io/css/main.css" />
+<link  rel="stylesheet" href="/css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/sqw-max/sqw-max.github.io/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/sqw-max/sqw-max.github.io/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
   
 
 
@@ -68,15 +68,15 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"github.com","root":"/sqw-max/sqw-max.github.io/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"DzAitph7OHy4D4lsF1zGbi0n-gzGzoHsz","app_key":"32FjQVIAy5mLhmuKKERaGjF7","server_url":"https://1epgvtla.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":false}},"search_path":"/sqw-max/sqw-max.github.io/local-search.xml"};
+    var CONFIG = {"hostname":"sqw-max.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"DzAitph7OHy4D4lsF1zGbi0n-gzGzoHsz","app_key":"32FjQVIAy5mLhmuKKERaGjF7","server_url":"https://1epgvtla.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/sqw-max/sqw-max.github.io/js/utils.js" ></script>
-  <script  src="/sqw-max/sqw-max.github.io/js/color-schema.js" ></script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
   
 
   
@@ -110,7 +110,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/sqw-max/sqw-max.github.io/">
+    <a class="navbar-brand" href="/">
       <strong>雯之</strong>
     </a>
 
@@ -135,7 +135,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/sqw-max/sqw-max.github.io/">
+              <a class="nav-link" href="/">
                 <i class="iconfont icon-home-fill"></i>
                 首页
               </a>
@@ -147,7 +147,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/sqw-max/sqw-max.github.io/archives/">
+              <a class="nav-link" href="/archives/">
                 <i class="iconfont icon-archive-fill"></i>
                 归档
               </a>
@@ -159,7 +159,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/sqw-max/sqw-max.github.io/categories/">
+              <a class="nav-link" href="/categories/">
                 <i class="iconfont icon-category-fill"></i>
                 分类
               </a>
@@ -171,7 +171,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/sqw-max/sqw-max.github.io/tags/">
+              <a class="nav-link" href="/tags/">
                 <i class="iconfont icon-tags-fill"></i>
                 标签
               </a>
@@ -183,7 +183,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/sqw-max/sqw-max.github.io/about/">
+              <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
                 关于
               </a>
@@ -212,7 +212,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/sqw-max/sqw-max.github.io/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -241,7 +241,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          4.8k 字
+          4.5k 字
         
       </span>
     
@@ -252,7 +252,7 @@
         
         
         
-          41 分钟
+          38 分钟
         
       </span>
     
@@ -303,7 +303,7 @@
             
               
               <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="cbb9782e50f0fe69a2edaa16cad7b96ba3ee60d17e6c2e32d922a7d3abaa9d51">4f2a10b3d937a2935be561490e3d5b6cb9808b517feb3b9def6a098fbad14930a4c0c4d80e893de5a606d9e5c0f1bbed55ede6e99362a8f7753096f7fa1c572d8851cea3b723956316cf950c77610def6dda06fa09c6e3f4e19b6d66b593323a84b9ec8e7273ae1d17327e9c18be86060bb547999009019c219db63845a263861211d6c1fd3bc424bc8350e35b1e8846479447696a71ed0455b4acc09ced673ef65924311adf4d7a4794b8112ab56b31c7de8414134103c9e75abe6815476ff7d2aec1c9dbd69845c6eedb24dcdc07374431013c80ecbb2fd426e3189043cd79e1ff6463119251f58c3a01f89993192476083f57b7aa59aae79381c3c80b19a5b2df18810f1f8913072f713cffc585e74533f1dab7a8ab9b7ecce5fc0194dc79c69eab6d98f6782ab9ff938ac17ea0af69ce94025a6deac0dd052d40fcfe91af7c83e046395bff89e4448ba1bd17d85a6000e3eea83e03084ce245cd183f0de134335b45290d7c3a7e87240d4270fa9364e839d8c8036adfb97d1bd11fa05caab07e173dff89b18e6af6346926d1426787419827be975c7f0c8cd249eae1052fe876fbc462b3d4b14bb59355039bbf9867c97b5a4e1e57f2cdc4601fd285db92a1bea6befdc66b007886b439f3d3e9b228b011bedfe2c2ffb5d6d63f87e331689efd592569b9162e7c1140203ea9dedfa59aeb3965b14f2ef1894455e9531f9f2ce4adbdf94dc8f2b92d881a2efe6ca3859775919ceb4c761805fd75f1dc10b2b26e59fd5e4f73e6554e38b94c44784e8acaa61970935da70b4b26d8d756c15bf84a61b487ec6bc2da16b9c92e9d0f12220f396eebc10df9f3960f644466da3c08123bbbf1d4974da8bbfe12956d5d28d8bbdefe3e27926c96748ef14cbbd5ef139b874877bc44d257c5f48a82c7291c3de711a19384e6c225783828721d9446b75c9920833578b5eb4b407e6486d54ac4e6e631ef69b43a3643f3c0d51458140ec880787f4f48d44b63c134a39480e2fbd5c350edcad90ced2493594fc7a56d23be5192ba1606a98acaa2268b554534a2ee516fcf820b9fdf55777440615fe52c66cff479f2c3be7e2d6d0c91183410a46be91322e2adbd9d18750cc362bbdcb4f541cfe409995cc561ce352266bac097cb9d78c4528dde04347c44e5b6fd39c0ada3df9e2b7f96e192aca935e6b3933d5a4e24638853a20168b28d4874e03e00f9cf20cfa0cc6dac910b40ad1c3db761c5af8af6589c7782beeb54f710ec7e41c279c4b2f8643a005f1fdc3554dcc32c47ee05fea7748c7674cf8a149f3222ccbba673d33d48cacd80a028891d263107c8d9d0f23ac2452610f0441eda9481f5375802fb6ec32ebf319baa7f29f187e4bccbb423133c24a71d7f135fcc185c05f21ac06238e7f8c447dd5013837d47291e3b870b2c515651a0a3eb87867ae48fc8a1cd6515477793edd9ff580bafd40e398f50b9f98247ac6e592e20c58031e73f5f725af9a9b2d1e095d98735e179711fb51734d5d1f30037df2327ef9637ae3f13703d2f888fd674541b2950d91b991ca1eb7690f4f28c4a070d6266d45422f053a261a53ed80da325bcc6ec8d25f63492ca3f69115564a1444d74eaef93e7a409ea486a72117cf7c2c43655e03041bc6580bc93625db10dff06cc276589d17ddf3435ed979a31538979ebe248f0949f3740ffe2a6db49cca2a5c2ba9367f8f4e6b4b683fc52f6349d44c0b0333417227bc6588bd53d50a94231330c1a63fe40da42b31cead036e00fa13f2952096e158517de3512674bab96c887d53a4687b0476dfbc5cc50319adec9aa0f95c87773c73c169fc87ad677d1728baff3c0763244153176ac93fafb6bb1d1f7f000cfed4083eefd9384935ed37113f4c00d5ad4c122cca01c586d4eff8511880cffc186c9f9a8dacb59535399630423a9d224e2a4ca983dc6df9c5605ab590629c959532337cdaaaa056559c64a0a5f4ff97c32c079d4de6b368428f2ba30ff4b5ce0b2e44574b0d2cb4357f9b520d0e12112ecd8d4b48f88c63be8bb5589dfb0a59238fce027bc1c5b592dbb3bc13057f328d185560bbb0717cac9c8982558746da45b182ecc826f64863d11a1b9a81f803294df539c156b7f66419531510b6c3af73f18739349d772fb874be382d82c8c28f2d38f3e3e337d5996c3bd1fac88236e3742469ea7df7e1c6c0443ad09e69125c6dadc1b9331313655b368dc023b5c3dc0d9b2b07dcb17f6f403d6feca084801e6aa89a541a4a11482914dcb91d4fdd0a64256f7c297d83eef71197a291688bc1b752acd32a72fe14a9cbc8d6e90da431d1bb491ac807f8bf007939d7821328852165598dd9fb9e00dc915cf021788b05f8f948c79add9b1a7a8b293d9264da11599fb4a0dd31ed1f50da5d1577dee194c4963a9ac9ee0be80130d1e08095485cab3f60ee2538908badcc147c05f7f286a96713097d85400755b1c8110409d774461857c329f3c3b7e35fb2a09a84ec9b1bb5198bfa49765f0052fddf4b1b5fab90e69a4af0fcc7c23e7fbb918f9d72c0e9d9769d3fd30179eb32f366f9abb00a257d3d1c49fc671a645351565e7565c58d08f93f14215a8af2302dc116806eece0c2f0aff93838e234c30be6cd71fed78eda2713eadcc89c4bebeb6e14b8900c8a72c0272e2ea08a887fa57d70ed423f58a4aaba9acf31477a85f65a6927ea8edaf4fd09eefd79ff74ba05049b853c34af901d79d9acd19a6412df31beb5aa40592f8a21190bc05bbf1903b3b3856216a55cf279098911179639e757ecfd916f3d5b633fe36ece6b1644494e8dbeab38e06cb1c737167cd2bbf0ffdece1c26d913208e88872fdd75f4065898be62305ac89b69ecfc0d87f712bfdef2957a014b338a9ce2bcc0777bef0e3113ebeb13b692a458b85641c4daa4ff233f4ee9189c36fd7ba4070c3f63711271eed291dad596bbf417aa38633d1b617ce36effe7de7e48bb5ec73d4b4a8b8d4359a56a5fbfd33fb4df4f194cd59d13e575a529147c7e9cfb9bc81af668ba376aff73cfe431d274526f79d41d0a29d25824df99683e0d4b5c7a7d46cd683b49044dcec8396918c1d7d9c0925740bda5b06326362fef78cc1811be37168bb8b6051e328e76b3028e8539b467de9ee1eae8644d833b343bdf29899c57d30ddf0550a55c5a390b3f1674332ff6a2fcc664afcb90e39d1721e590c7be10a380de98bc4fdc7ff91fb27812ac104bb950390241952dfcc413386b70b4e49be3fd713494a6727f78c05dea17c82c770ff19a4c6f649ed52a7b91e0915e9de3a8e2701fd5d57e0d5f2b324c89447a28d2c3917afec7ed3f7ade5732f899af674557136bcca2521dfc3c13f31b801e98dce988b36a6e62fecfc8132f8b67920263e194db939a17bbb</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="d6217909ad042d7073196494781b98842d1850315bdbe60f5f5d9328b97ca723">4f2a10b3d937a2935be561490e3d5b6cb9808b517feb3b9def6a098fbad14930a4c0c4d80e893de5a606d9e5c0f1bbed55ede6e99362a8f7753096f7fa1c572d8851cea3b723956316cf950c77610defb978d2e0335c8c502518fce65a7203e0e4a1321205dbba34f02924f9da8c1fc024e402bb564feeb27f890d1c2b1c4d06328bb407f3b6bab9c3daa82b4caab89c0e1701f48d3daa5abb7f3f0e06ec515eb01b0ed960396cd5a10f29da3200979b25dd2972c1446b51654edf749d190fdafcbbb8f957f9d9b5b0566d65f402c39cec73f2ddb3787bfa0856dd960224f3e2d153a2545b2dbfb433d88cf0e274e20c4ed0a95837cd5b14ceeebc9d8fb6353e06b0ab61c8dd337f66209142d43e2d93f755e816df05e49a45873a57d3dffb29eb3e95a9468b55772e9a51a3e137db4725e145946bc7d71383e0677605eb905f39a23aa56cdf04d1a7fca5968eca32109819acc98dba4a32f2d53594752a37116871d4eb53f952fce81b36ae6a959393bc757af3dabf44cb1fd37d6e8c8cb70e6f1adf0d02c84ce435962eb98321820ab33bde4c7f728038cfd2c76a46d3de43b11cb31e11b70fb98142a02c7d84438b2cd6b3ef777bf015e012a45583c31d5ad1c37bc6c5bc55963161bb115cc4d1150e93041e441a2570337687133a1d27a5813952e9bc5747b882ffbc28089094da441172c4f59f85b4f1b03f3ecd99784abd673ec613c1bbaa13b14a030d40e13e690f6b02851d8870e2eeebb1e3999821e1aed5e657085382ea673e3f2cccbd4b016c9bd40af6a70b3e6b0de473b9aaff8f7456cf72da06a5c3366ad754283dbc43a18704239790f778260677ca87d8587d6831198b5d3b791795c36c19981bbd78c824abb17bcff5610bb19143d70bcd1d7b7a33eb7ee2beaaf37f72c12530f93fc41730c64226429a6382891449a6bf40bd98d1d0464c990c6cb0bb2c0f9880bdd49e05cd57e23a24363cd275947eeebb02ae58a72d87c8197e5deaa0a066fd6eeb332571763024efdec6c3f4a6b9f238dccc5205bfbbf2fe716f63545df87163a03d5953743a7e071d5e6f5506fa5ce54be5a0d86357d9fde7540ea08c5ae13f1de688099d684934b13e1053cae04f89488d7166d306d4b4eb373e79de6ee85bb4677a983465c0835660927136b9f5a5db86d50787c07f01f2d233a6d0aed078daae1bae0b7278cce3eb9137244d01bfa7df5011226f90d75425ae87fd7b99c48194dd7d3490c4200d9ca8d772ad6bcd0acd51caea014719ef5e66a8339a8aee0a4c810e0f42d684af001b7ab8514681a80c6600bbef2b69b4c20633b0a99578823eed8233f636bc9499791c395bbc5170c578673d7cc4dbe7473139ca576685a6b7415f763f540de1cf2ffbd7f11a62295fa5d675a6a5ffe3e3e15280ccb40b18546635efeab949089e6e1f58156cd72f8b8c3a3741915b4d386b45f49493c8809cd42eac2c77cd433de53d71edecd0c6febff67530c547ea9355857caadb182f74a5a803380236863dd9b5d5214ffedd2746ebbfb549d9e3df5ce9eb8d87563aa2b2f5470a203022857dd1e31322cfa81a80c787b992c5d4d29a1503e8e43a50bc3c002efeb8d60fb28d5034a63ebaeafd76ab1716d543b5171bab3b606eb989eab641a78887aaac9acd7ca0481f3c4dba035f8bdb3072e958c8b40c88f364ed6227a215f44cd1e64ff02873b672b00f80039e91283947025ce14b1376671d420b85fbf81361bf3f8319595014e28e15260a70f9c72e3269039df57869415749d394d80dc29c7de11e1f6bbafb7a0f9691b20c7d6ed6d9c8e4250de7f7c83f18b504025d149ad9d87064df177717372857d34f3b1349d6d7515376561d3aab1d0e675054dc2f5205bccfcd0b830c138f5efeb76ebb982886d25894fa4bd4b615f4134ad2aaceb63aa13780ef4aae4b79ed9ef69a20f5b1f04e4739d975ef36a94f71086b37c365db923ea0cf24af801076436872d761e724d0b51d6df0fde08d58ac21a6f318ee78cc2afe5a77b49d300b7c62f5fee46a7cd82e96ca561fcc6325df20a7a9f235ea4242ddd79d5dbcec9f28d673ef9b113175b638c1e395a10c4243b9afbded322f49836ffa959274f3b4ad1e0327c6827251a888ca7424844bc98d2351f06f7ca5bb0c9080fc8a5373d7b16cbcca2ad3de1bc27f92da8dad0cc071360e7f247ccb0056afa776404ed170f4954bdde6fee8f062b5ac771a248a2f41de938759bf43a26ef3eb23d305d3917564479dee4b864b90d90427e3a8b48b7a07ab75b161e28f358c9bab038ddf83562e52c3b25e3c9e7c948d017109dc85542bb51129a76efb513f1e18fdec4cafd397611999fe4f0617595319520bac698fa53f9ce3c40e7f7ea63d89aa0ebc4352fb961c26bb33a126b07d782b8b8f30bc4aeae7609edb8f005284749587608975864221881841a76ec774515f9eaf8e4a16f3a8b65122a14caab4c593b276b489fc489dcf60af1e9988bdd41391e77cf3f356b780271e33d78f58f16e87b87a83405f41f5634486989e9b6ff2374d97cd39544f864a92ac8fb45737597beb43dd793ec63da4c27839530e6e4b2d69ebac38a83b5e21f4247b4d0b5504f6c15d4d0ad3bb31da689171ddbd4e33a53444853d3c66fd0bab0fc4b1650e78f788c6864dcab7ebbcd449926dbc3e8dcd8972d15608870bb0faea17fcda2eb77de3e4235591055864a1d259281673cf12ded77c2eefc261f7035a88a347ca2da45835fe202ce25fdabc18a3b4a79bb15ee5019187660f82b5991af67242c8c02ebf774f4893dda4ed527a8410606c7a6f32df8f4ef203656c5ead797865a0074aafe2c59db702a165eaab070279214f6c340bbcb7c0cf4b0f82f436ea72b3c469231bea1a5e1b2789bb7431cdb3e6037885011b3873c28dbc2fce873a0dc355db364febe130d7c92a0780713c73abed9b26001224eb04dfeaaa6abfaf24328ba44dc2105dceb081babdf7e812766d20ac62f07b5578a170f92a97f27f78cf0397ef5cf9d514d619554d55c93f792a8a996457ca2a58ab6dd45775dadc95ac62791df8c0bee78a27febeb2e370a99175f2509cf88e5d095ef989af973f950975c7aeaf045ffe8d9741144d53c002f9478e254883288c6288197e52450e6c9fbee9cb7e9be18da8823ecc60f895d5a94c</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
       <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
@@ -313,7 +313,7 @@
     </div>
   </div>
 </div>
-<script data-pjax src="/sqw-max/sqw-max.github.io/lib/hbe.js"></script><link href="/sqw-max/sqw-max.github.io/css/hbe.style.css" rel="stylesheet" type="text/css">
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
               
 
               
@@ -332,7 +332,7 @@
     
       <span class="category-chain">
         
-  <a href="/sqw-max/sqw-max.github.io/categories/ASP-NET/" class="category-chain-item">ASP.NET</a>
+  <a href="/categories/ASP-NET/" class="category-chain-item">ASP.NET</a>
   
   
 
@@ -353,7 +353,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>在Web API项目中配置Swagger</div>
-      <div>https://github.com/sqw-max/sqw-max.github.io/2022/10/25/1fd12b9d8aee4ec98bbf07e6bbd9c9b2/</div>
+      <div>https://sqw-max.github.io/2022/10/25/1fd12b9d8aee4ec98bbf07e6bbd9c9b2/</div>
     </div>
     <div class="license-meta">
       
@@ -397,7 +397,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/sqw-max/sqw-max.github.io/2022/10/26/bc8445f3a126401686fbf5064dceaeeb/" title="C#实现http请求">
+                      <a href="/2022/10/26/bc8445f3a126401686fbf5064dceaeeb/" title="C#实现http请求">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">C#实现http请求</span>
                         <span class="visible-mobile">上一篇</span>
@@ -407,7 +407,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/sqw-max/sqw-max.github.io/2022/10/24/ef4c8c1cac7b4defb6bf6558b3c29c43/" title="Web API依赖注入">
+                      <a href="/2022/10/24/ef4c8c1cac7b4defb6bf6558b3c29c43/" title="Web API依赖注入">
                         <span class="hidden-mobile">Web API依赖注入</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -590,8 +590,8 @@
 
 <script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/sqw-max/sqw-max.github.io/js/events.js" ></script>
-<script  src="/sqw-max/sqw-max.github.io/js/plugins.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
 
 
   <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
@@ -613,7 +613,7 @@
 
 
   
-    <script  src="/sqw-max/sqw-max.github.io/js/img-lazyload.js" ></script>
+    <script  src="/js/img-lazyload.js" ></script>
   
 
 
@@ -729,9 +729,9 @@
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script defer src="/sqw-max/sqw-max.github.io/js/leancloud.js" ></script>
+  <script defer src="/js/leancloud.js" ></script>
 
-  <script  src="/sqw-max/sqw-max.github.io/js/local-search.js" ></script>
+  <script  src="/js/local-search.js" ></script>
 
 
 
@@ -739,7 +739,7 @@
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/sqw-max/sqw-max.github.io/js/boot.js" ></script>
+<script  src="/js/boot.js" ></script>
 
 
   
